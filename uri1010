@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int code1, qtde1, code2, qtde2;
+    float valor1, valor2;
+    scanf("%i %i %f", &code1, &qtde1, &valor1);
+    scanf("%i %i %f", &code2, &qtde2, &valor2);
+    printf("VALOR A PAGAR: R$ %.2f\n", qtde1*valor1+qtde2*valor2);
+    return 0;
+}
