@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    double  M[12][12],soma,x;
+    int linha,i,j;
+    char oper;
+    scanf("%i\n",&linha);
+    scanf("%c\n",&oper);
+    for(i=0;i<12;i++){
+        for(j=0;j<12;j++){
+            scanf("%lf", &M[i][j]);
+        }
+    }
+    soma=0.0;
+    for(j=0;j<12;j++){
+        soma=soma+M[linha][j];
+    }
+    if(oper=='M')
+        x=soma/12.0;
+        else
+        x=soma;
+        printf("%0.1f\n",x);
+    return 0;
+}
