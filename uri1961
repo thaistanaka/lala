@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int P,N,i,x,y=0;
+    scanf("%i %i\n", &P, &N);
+    int *v;
+    v=malloc(N*sizeof(int));
+    for(i=0;i<N;i++){
+    do{scanf("%i ",&v[i]);
+    }while(v[i]>10||v[i]<0);
+    if(i>0){
+            if(v[i]>v[i-1]){
+            x=v[i]-v[i-1];
+    if(x>P)
+        y=1;
+    }
+
+    else{
+        x=v[i-1]-v[i];
+        if(x>P)
+            y=1;
+    }
+    }}
+    if(y!=1)
+        printf("YOU WIN\n");
+        else
+            printf("GAME OVER\n");
+    return 0;
+}
