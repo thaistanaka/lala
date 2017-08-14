@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,j,N;
+    scanf("%i", &N);
+    if (N<10000){
+            for(i=1;i<=N;i++){
+                    scanf("%i",&j);
+            if(j>0&&j%2==0)
+            printf("EVEN POSITIVE\n");
+            else{
+            if(j>0&&j%2!=0)
+                printf("ODD POSITIVE\n");
+                else{
+                    if(j<0&&j%2==0)
+                    printf("EVEN NEGATIVE\n");
+                    else{
+                        if(j<0&&j%2!=0)
+                            printf("ODD NEGATIVE\n");
+                        else
+                            printf("NULL\n");
+                    }}}}}
+
+    return 0;
+}
