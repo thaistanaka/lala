@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int i,j,x,T;
+    int N[1010];
+    scanf("%i\n",&T);
+    i=0;
+    while(i<1000){
+        x=0;
+        while(x<T){
+            N[i]=x;
+            x++;
+            i++;
+        }
+    }
+    for(j=0;j<1000;j++){
+        printf("N[%i] = %i\n",j,N[j]);
+    }
+    return 0;
+}
