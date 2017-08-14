@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N;
+    while(scanf("%i",&N)!=EOF){
+        int i,j, **m;
+        m=malloc(N*sizeof(int*));
+    for(i=0;i<N;i++)
+        m[i]=malloc(N*sizeof(int));
+    for(i=0;i<N;i++){
+        for(j=0;j<N;j++){
+            m[i][j]=0;
+        }
+    }
+    for(i=0;i<N;i++){
+        for(j=0;j<N;j++){
+                if(m[i][j]==0&&(i+j)==(N-1)){
+                    m[i][j]=2;
+                }
+                else{
+                    if(m[i][j]==0&&i==j){
+                        m[i][j]=1;
+                    }
+                    else
+                        m[i][j]=3;               }
+        }}
+    for(i=0;i<N;i++){
+        for(j=0;j<N;j++){
+            printf("%i",m[i][j]);
+        }
+   printf("\n");
+        }
+    }
+    return 0;
+}
