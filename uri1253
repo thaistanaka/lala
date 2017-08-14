@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+    int N,i,x,y,j;
+    char a[51],b[51];
+    scanf("%i",&N);
+    for(i=0;i<N;i++){
+        scanf("%s",a);
+        scanf("%i",&x);
+        y=strlen(a);
+        j=0;
+        while(j!=y){
+                b[j]=a[j]-x;
+        if(b[j]<65){
+            b[j]=a[j]+26-x;}
+            j++;
+        if(j==(y)){
+            b[j]='\0';
+            break;
+        }
+
+        }
+        printf("%s\n",b);
+    }
+    return 0;
+}
