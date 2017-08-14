@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int L,V,X,i;
+    while(scanf("%i",&L)!= EOF){
+            X=0;
+        for(i=1;i<=L;i++){
+            scanf("%i",&V);
+            if(V>X)
+            X=V;
+        }
+    if(X<10)
+        printf("1\n");
+    else{
+        if(X<20)
+            printf("2\n");
+        else 
+            printf("3\n");
+    }
+    }
+    return 0;
+}
