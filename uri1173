@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main () {
+    int V, i;
+    int N[10];
+    scanf("%i\n", &V);
+    N[0]=V;
+    for(i=1;i<10;i++)
+        N[i]=2*N[i-1];
+    
+    for(i=0;i<10;i++)
+        printf("N[%i] = %i\n",i,N[i]);
+    
+    return 0;
+}
