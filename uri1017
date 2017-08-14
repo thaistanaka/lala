@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int tempo, veloc,km;
+    float litros;
+    scanf("%i\n%i", &tempo, &veloc);
+    km=veloc*tempo;
+    litros=km/12.000;
+    printf("%.3f\n", litros);
+    return 0;
+}
