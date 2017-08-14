@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+int main()
+{
+    int C,N,i;
+    char nome[10];
+    scanf("%i",&C);
+    for(i=1;i<=C;i++){
+        scanf("%s",nome);
+        scanf("%i",&N);
+        if(strcmp(nome,"Thor")==0){
+            printf("Y\n");
+        }
+        else{
+            printf("N\n");}
+    }
+    return 0;
+}
